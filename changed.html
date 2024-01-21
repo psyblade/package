@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Fairy Ice Palace</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Abel&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Noto+Sans:wght@400;700&family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Merriweather:wght@400;700&family=Oswald:wght@400;700&family=Barlow:wght@400;700&family=Assistant:wght@400;700&family=Urbanist:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Source Sans Pro, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+			text-align:center;
+        }
+
+		.logo {
+		  font-size: 1.5em;
+		  font-weight: bold;
+		  min-width:120px;
+		}
+		
+		#logo {
+			height:200px;
+			align:center;
+		}
+		
+		h1, h2, h3 {
+			color:#fff;
+		}
+		
+		h1 {
+			font-family:lato;
+			font-size:40px;
+		}
+		
+		h2 {
+			font-family:roboto;
+			font-size:30px;
+			opacity:0.7;
+		}
+		
+		h3 {
+			font-family:abel;
+			font-size:30px;
+		}
+
+        .jumbotron {
+            background-image: url('./imgs/jumbotron-xl.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+			background-repeat: no-repeat;
+            height: 450px;
+			text-align: center; /* Center-align text */
+			padding-top:250px;
+        }
+		
+		.jumbotron h1 {
+			opacity:0.7;
+		}
+		
+		.jumbotron h2 {
+			opacity:0.7;
+			text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+		}
+
+        header {
+            background-color: #000;
+            text-align: center;
+			height:40px;
+        }
+		
+        header h2{
+            font-family:Urbanist;
+			font-weight:400;
+			color:#aaa;
+        }
+
+
+        .main-content {
+            padding: 0px;
+			width:100%;
+            margin: 0 auto;
+			color:#ddd;
+        }
+		
+		section {
+			width:100%;
+		}
+		
+		.container {
+			padding: 20px;
+		    max-width: 1200px;
+			margin: 0 auto;
+		}
+
+        .image-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+		
+        .single-column-section {
+            width: 100%;
+			text-align:justify;
+			line-height:30px;
+        }
+		
+		.single-column-section h3 {
+			text-align:center;
+		}
+		
+        .two-column-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+			margin-left:100px;
+			margin-right:100px;
+			line-height:30px;
+        }
+
+        .two-column-section div {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+		
+		.justify_left {
+			text-align:left;
+		}
+		
+		.justify_right {
+			text-align:right;
+		}
+		
+		.float-left {
+			float:left;
+		}
+		
+		.float-right {
+			float:right;
+		}
+		
+        .three-column-section {
+            padding: 50px 20px;
+            text-align: left;
+			line-height:30px;
+        }
+		
+		.three-column-section h3 {
+			text-align: center;
+		}
+
+        .column {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .column h3 {
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            font-size: 16px;
+        }
+		
+        .footer_image {
+            background-image: url('./imgs/footer-xl.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+			background-repeat: no-repeat;
+            height: 100px;
+			text-align: center; /* Center-align text */
+        }
+
+        @media (min-width: 768px) {
+            .three-column-section {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .column {
+                width: calc(33.33% - 20px);
+                margin-bottom: 20px;
+            }
+        }
+		
+		footer {
+			background-color: #10121f;
+			padding: 20px;
+			color: #fff;
+			text-align: center;
+		}
+
+		.footer-links {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.footer-column {
+			flex: 1;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		footer a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		.social-icons {
+			margin-top: 0px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+		.small-logo {
+			height:30px;
+			margin-top:0px;
+		}
+
+		@media (max-width: 768px) {
+			.footer-links {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.footer-column {
+				flex: 1;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+    </style>
+</head>
+<body>
+	<img id="logo" src="./imgs/logo1-xl.jpg" alt="logo">
+
+    <div class="jumbotron">
+        <h1>Welcome to the Princess Fairy Ice Palace</h1>
+        <h2 class="subtitle">The place of your dreams</h2>
+    </div>
+
+    <header>
+        <h2>Explore this Magical Place</h2>
+    </header>
+
+    <div class="main-content">
+	    <section class="single-column-section">
+			<div class="container">
+				<h3>The Palace</h3>
+				<p>Nestled within a pristine winter wonderland, the Princess Fairy Ice Palace stands as a glistening masterpiece of enchantment and elegance. The palace, crafted entirely from shimmering ice and snow crystals, sparkles like a thousand diamonds under the soft glow of the northern lights. Towering spires and graceful arches adorned with delicate icicles reach towards the sky, creating an ethereal silhouette against the backdrop of a frozen landscape.</p>
+				
+				<p>Upon entering, guests are welcomed by the crisp scent of winter air and the soft tinkling of magical chimes hanging from crystalline branches. The interior is a symphony of ice sculptures depicting mythical creatures, snowflakes suspended in midair, and intricate frost patterns that dance along the walls. The palace's grand ballroom features a magnificent ice chandelier that casts a gentle, iridescent glow over a shimmering ice floor, inviting all who enter to partake in a graceful dance beneath its radiant beauty.</p>
+			</div>
+        </section>
+	
+
+		<section class="image-section">
+			<div class="container">
+				<img src="./imgs/s1-xl.jpg" alt="Section Image"> <!-- Add your image URL here -->
+				<h2 class="section-title">The Garden</h2>
+				
+				<div class="two-column-section">
+					<div class="justify_right">
+						<p>The garden of the Princess Fairy Ice Palace unfolds like a mesmerizing tableau of frozen enchantment, where nature and magic coalesce in a harmonious dance. Nestled within the palace grounds, this celestial garden is a testament to the delicate beauty of winter.</p>
+
+<p>A canopy of twinkling fairy lights, fashioned from gently glowing ice crystals, hangs above the garden pathways, casting an ethereal radiance that transforms the landscape into a dreamscape. Delicate snowflakes, suspended in midair, create an ever-present flurry, giving the impression that time has momentarily frozen in reverence to the garden's magical allure.</p>
+					</div>
+					<div class="justify_left">
+						<p>Luminous ice sculptures of mythical creatures, dancing fairies, and majestic unicorns stand as guardians among the frost-kissed foliage. Each step through the garden reveals intricately carved snowflowers that bloom in vibrant hues, their petals glistening like precious gems under the soft glow of the northern lights.</p>
+						
+						<p>Enchanted ice benches, draped in plush, fur-lined throws, invite visitors to linger and bask in the serene beauty of the surroundings. Musical chimes crafted from delicate icicles play a soft melody, carried by the gentle whispers of the wind, creating a symphony of nature and magic.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		
+
+		<section class="image-section">
+			<div class="container three-column-section">
+				<div class="column">
+					<img src="./imgs/c1-xl.jpg" alt="Image 1"> <!-- Add your image URL here -->
+					<h3>The Bedroom</h3>
+					<p>The bedroom in the Princess Fairy Ice Palace is a sanctuary of otherworldly beauty and serene enchantment. As one enters, the air is infused with a gentle, refreshing coolness, reminiscent of a crisp winter morning. The room is adorned with delicate frost patterns that twirl along the walls, creating an intricate dance of ice and light.</p>
+
+					<p>The centerpiece of the bedroom is a regal bed, its frame carved from enchanted ice and adorned with ethereal curtains that billow like delicate snowflakes caught in a gentle breeze. The bed is dressed in luxurious, frost-kissed fabrics that shimmer in the ambient glow, inviting the princess to rest in the lap of winter elegance.</p>
+				</div>
+
+				<div class="column">
+					<img src="./imgs/c2-xl.jpg" alt="Image 2"> <!-- Add your image URL here -->
+					<h3>The Bathroom</h3>
+					<p>The bathroom in the Princess Fairy Ice Palace is a sublime retreat, seamlessly blending functionality with the enchanting beauty of an icy dreamscape. As one enters, the air is filled with the invigorating scent of frost-kissed blooms and the gentle sound of cascading water, creating a serene atmosphere that transports guests to a realm of tranquility.</p>
+
+					<p>The centerpiece of the bathroom is a crystalline bathtub, meticulously carved from enchanted ice, adorned with delicate snowflake patterns. The tub seems to emit a soft, iridescent glow, casting a mesmerizing light that plays off the frosty surfaces. Luxurious, fur-lined towels and robes hang nearby, inviting those who enter to indulge in the warmth of the winter embrace.</p>
+				</div>
+
+				<div class="column">
+					<img src="./imgs/c3-xl.jpg" alt="Image 3"> <!-- Add your image URL here -->
+					<h3>The Kitchen</h3>
+					<p>The kitchen in the Princess Fairy Ice Palace is a culinary haven nestled within the frosty embrace of enchantment. As one steps into this whimsical space, the air is filled with the delightful aroma of winter berries and the faint crackling of magical fires. The kitchen seamlessly combines functionality with the ethereal beauty of ice and snow.</p>
+
+					<p>The heart of the kitchen is a grand, ice-carved hearth that radiates warmth and cheer. It serves as both a cooking station and a gathering place, where delicate icicles dangle like culinary chandeliers, casting a soft glow over the culinary creations taking shape. Countertops made of glistening ice provide a pristine canvas for preparing whimsical treats and delectable delights.</p>
+				</div>
+			</div>
+		</section>
+
+    </div>
+	
+    <div class="footer_image">
+    </div>
+	
+	<footer>
+		<div class="footer-links">
+			<div class="footer-column social-icons">
+				<a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+				<a href="#" target="_blank" title="Instagram"><i class="fab fa-whatsapp"></i></a>
+			</div>
+			<div class="footer-column">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="team.html">Team</a>
+				
+			</div>
+			<div class="footer-column">
+				<img src="firm.jpg" alt="Small Logo" class="small-logo">
+			</div>
+		</div>
+		<p>&copy; Copyright Psyblade 2024. All Rights Reserved</p>
+		
+	</footer>
+
+    <!-- Font Awesome icons (you can include this in your project or use a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</body>
+</html>
